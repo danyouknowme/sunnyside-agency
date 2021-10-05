@@ -122,6 +122,7 @@ export default {
   color: #000;
   padding: 10px 0;
   animation: easeMenu2 0.5s;
+  z-index: 999;
 }
 
 .text2 {
