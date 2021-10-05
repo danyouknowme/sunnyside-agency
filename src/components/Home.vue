@@ -9,7 +9,32 @@
       </div>
     </div>
     <div class="content" id="content">
-
+      <div class="content1">
+        <div class="text1">
+          <h1>Transform your brand</h1>
+          <span>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </span>
+          <a href="#">Learn more</a>
+        </div>
+        <div class="image1"></div>
+      </div>
+      <div class="content1">
+        <div class="image2"></div>
+        <div class="text1">
+          <h1>Transform your brand</h1>
+          <span>
+            We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </span>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+      <div class="content1">
+        <div class="image3"></div>
+        <div class="image4"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -59,7 +84,57 @@ export default {
   }
 
   .content {
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content1 {
+    display: flex;
+    align-items: center;
+  }
+
+  .text1 {
+    flex: 1;
+  }
+
+  .image1 {
+    flex: 1;
+    background-image: url("../assets/desktop/image-transform.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 720px;
+    width: 600px;
+  }
+
+  .image2 {
+    flex: 1;
+    background-image: url("../assets/desktop/image-stand-out.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 720px;
+    width: 600px;
+  }
+
+  .image3 {
+    flex: 1;
+    background-image: url("../assets/desktop/image-graphic-design.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 720px;
+    width: 600px;
+  }
+
+  .image4 {
+    flex: 1;
+    background-image: url("../assets/desktop/image-photography.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 720px;
+    width: 600px;
   }
 
   @media screen and (max-width: 375px) {
@@ -87,5 +162,15 @@ export default {
       font-size: 32px;
       width: 100%;
     }
+
+    .content1 {
+      flex-direction: column-reverse;
+    }
+
+    .image1 {
+      width: 100vw;
+      height: 720px;
+    }
+
   }
 </style>
