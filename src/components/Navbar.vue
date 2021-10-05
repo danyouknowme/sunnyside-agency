@@ -9,18 +9,18 @@
           <font-awesome-icon :icon="selectIcon(isPressed)"/>
         </span>
           <div class="menu">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
+            <a href="#" class="text">About</a>
+            <a href="#" class="text">Services</a>
+            <a href="#" class="text">Projects</a>
+            <a href="#" class="contact">Contact</a>
           </div>
       </div>
     </div>
     <div class="menu2">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
+      <a href="#" class="text2">About</a>
+      <a href="#" class="text2">Services</a>
+      <a href="#" class="text2">Projects</a>
+      <a href="#" class="contact2">Contact</a>
     </div>
   </div>
 </template>
@@ -72,6 +72,38 @@ export default {
   justify-content: space-between;
 }
 
+.text {
+  margin: 0 30px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+
+.text:hover {
+  color: hsl(198, 62%, 26%);
+  border-bottom: 1px solid #fff;
+}
+
+
+.contact {
+  margin: 0 30px;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 25px;
+  color: hsl(198, 62%, 26%);
+  text-transform: uppercase;
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+
+.contact:hover {
+  background-color: #22a0df;
+  border: 1px solid hsl(198, 62%, 26%);
+  color: #fff;
+}
+
 .hamburger {
   display: none;
   font-size: 30px;
@@ -81,7 +113,7 @@ export default {
 .menu2 {
   display: none;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   width: 90vw;
   background-color: #fff;
@@ -89,13 +121,27 @@ export default {
   border-radius: 15px;
   color: #000;
   padding: 10px 0;
-  animation: easeMenu2 1s;
+  animation: easeMenu2 0.5s;
 }
 
-.menu2 a {
-  width: 100%;
+.text2 {
+  width: 95%;
   text-decoration: none;
   padding: 10px 0;
+  color: hsl(198, 62%, 26%);
+}
+
+.contact2 {
+  padding: 10px 0;
+  margin-top: 5px;
+  width: 95%;
+  text-decoration: none;
+  background-color: #3DBEFF;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Fraunces', serif;
+  font-size: 16px;
 }
 
 @keyframes easeMenu2 {
