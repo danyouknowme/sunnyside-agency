@@ -37,6 +37,7 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    z-index: -1;
   }
 
   .header-text {
@@ -47,7 +48,6 @@ export default {
     color: #fff;
     font-size: 70px;
     letter-spacing: 15px;
-    z-index: 1;
   }
 
   .arrow-down img {
