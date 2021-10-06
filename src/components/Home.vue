@@ -78,6 +78,20 @@
       <div class="pic3"></div>
       <div class="pic4"></div>
     </div>
+    <div class="footer">
+      <span class="footer-logo"></span>
+      <div class="footer-menu">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+      </div>
+      <div class="footer-icon">
+        <span class="app-logo facebook-logo"></span>
+        <span class="app-logo instagram-logo"></span>
+        <span class="app-logo twitter-logo"></span>
+        <span class="app-logo pinterest-logo"></span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -344,6 +358,64 @@ export default {
     width: 25%;
     background-image: url("../assets/desktop/image-gallery-sugarcubes.jpg");
     background-size: contain;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 400px;
+    background-color: #90D4C5;
+  }
+  
+  .footer-logo {
+    position: relative;
+    bottom: 60px;
+    width: 186px;
+    height: 36px;
+    background-image: url("../assets/logo.svg");
+    display: inline-block;
+    background-size: cover;
+    filter: invert(48%) sepia(11%) saturate(1614%) hue-rotate(118deg) brightness(67%) contrast(84%);
+  }
+
+  .footer-menu {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .footer-menu a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+  }
+
+  .app-logo {
+    position: relative;
+    top: 70px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+    margin: 0 20px;
+  }
+
+  .facebook-logo {
+    background-image: url("../assets/icon-facebook.svg");
+  }
+
+  .instagram-logo {
+    background-image: url("../assets/icon-instagram.svg");
+  }
+
+  .twitter-logo {
+    background-image: url("../assets/icon-twitter.svg");
+  }
+
+  .pinterest-logo {
+    background-image: url("../assets/icon-pinterest.svg");
   }
 
   @media screen and (max-width: 375px) {
