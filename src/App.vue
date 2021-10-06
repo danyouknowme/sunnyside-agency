@@ -43,6 +43,7 @@ html, body {
   margin: 0 !important;
   padding: 0 !important;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #app {
