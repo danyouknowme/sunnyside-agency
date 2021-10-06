@@ -72,6 +72,12 @@
         </div>
       </div>
     </div>
+    <div class="mul-pic">
+      <div class="pic1"></div>
+      <div class="pic2"></div>
+      <div class="pic3"></div>
+      <div class="pic4"></div>
+    </div>
   </div>
 </template>
 
@@ -308,6 +314,36 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .mul-pic {
+    display: flex;
+    width: 100vw;
+    height: 596px;
+  }
+
+  .pic1 {
+    width: 25%;
+    background-image: url("../assets/desktop/image-gallery-milkbottles.jpg");
+    background-size: contain;
+  }
+
+  .pic2 {
+    width: 25%;
+    background-image: url("../assets/desktop/image-gallery-orange.jpg");
+    background-size: contain;
+  }
+
+  .pic3 {
+    width: 25%;
+    background-image: url("../assets/desktop/image-gallery-cone.jpg");
+    background-size: contain;
+  }
+
+  .pic4 {
+    width: 25%;
+    background-image: url("../assets/desktop/image-gallery-sugarcubes.jpg");
+    background-size: contain;
   }
 
   @media screen and (max-width: 375px) {
