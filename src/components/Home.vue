@@ -47,6 +47,31 @@
         </div>
       </div>
     </div>
+    <div class="testimonial" id="testimonial">
+      <div class="head-text">
+        <h2>Client Testimonials</h2>
+      </div>
+      <div class="people">
+        <div class="person1">
+          <img src="../assets/image-emily.jpg" alt="">
+          <span>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</span>
+          <h3>Emily R.</h3>
+          <h5>Marketing Director</h5>
+        </div>
+        <div class="person2">
+          <img src="../assets/image-thomas.jpg" alt="">
+          <span>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</span>
+          <h3>Thomas S.</h3>
+          <h5>Chief Operating Officer</h5>
+        </div>
+        <div class="person3">
+          <img src="../assets/image-jennie.jpg" alt="">
+          <span>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</span>
+          <h3>Jennie F.</h3>
+          <h5>Business Owner</h5>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -222,6 +247,67 @@ export default {
     background: #F1BC9F;
     mix-blend-mode: darken;
     border-radius: 10px;
+  }
+
+  .testimonial {
+    height: 900px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head-text {
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    color: hsl(210, 4%, 67%);
+    letter-spacing: 7px;
+    top: 20%;
+    margin-bottom: 80px;
+  }
+
+  .people {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .people img {
+    width: 15%;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+
+  .people span {
+    margin-top: 30px;
+    width: 75%;
+    line-height: 30px;
+    color: hsl(213, 9%, 39%);
+  }
+
+  .people h3 {
+    font-family: 'Fraunces', serif;
+    position: relative;
+    top: 50px;
+    color: hsl(212, 27%, 19%);
+  }
+
+  .people h5 {
+    position: relative;
+    top: 10px;
+    color: hsl(210, 4%, 67%);
+  }
+
+  .person1, .person2, .person3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width: 375px) {
